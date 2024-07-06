@@ -1,0 +1,16 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+# @TODO: Install Google Cloud CLI
+# https://cloud.google.com/sdk/docs/install
+#
+# 1. If on ARM, download this: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-darwin-arm.tar.gz
+#    If on Intel, download this: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-darwin-x86_64.tar.gz
+#
+# 2. Extract the archive to any location on your file system (preferably your Home directory). On macOS, this can be achieved by opening the downloaded .tar.gz archive file in the preferred location.
+#    To replace an existing installation, remove the existing google-cloud-sdk directory and then extract the archive to the same location.
+#
+# 3. Install
+#    ./google-cloud-sdk/bin/gcloud init
+
+{{ end -}}

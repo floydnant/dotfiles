@@ -1,0 +1,12 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+# @TODO:
+# Close App Store apps in case this script updates them
+# killall Xcode 
+
+brew bundle --no-lock --verbose --file=/dev/stdin <<EOF
+{{ include "dot_Brewfile" }}
+EOF
+
+{{ end -}}
