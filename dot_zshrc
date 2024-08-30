@@ -166,13 +166,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /Users/floyd/.asdf/installs/terramate/0.4.5/bin/terramate terramate
 
-# Angular CLI completions
+# Load Angular CLI autocompletion.
 source <(ng completion script)
 
 # Init docker
 source /Users/floyd/.docker/init-zsh.sh || true 
-
-# Dart completions
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/floyd/.dart-cli-completion/zsh-config.zsh ]] && . /Users/floyd/.dart-cli-completion/zsh-config.zsh || true
