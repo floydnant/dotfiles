@@ -108,12 +108,12 @@ alias pd="~/coding/projects"
 alias bb="~/coding/bb"
 alias tmp="~/coding/tmp"
 
-alias o="sh ~/.dotfiles/alias-helpers/open.sh"
-alias c="sh ~/.dotfiles/alias-helpers/code.sh"
-alias oter="sh ~/.dotfiles/alias-helpers/open-iterm.sh"
+alias o="sh ~/.config/helpers/open.sh"
+alias c="sh ~/.config/helpers/code.sh"
+alias oter="sh ~/.config/helpers/open-iterm.sh"
 alias oob="open . -a obsidian.app"
 alias zshrc="chezmoi edit ~/.zshrc --apply && source ~/.zshrc"
-alias todo="sh ~/.dotfiles/alias-helpers/todo.sh"
+alias todo="sh ~/.config/helpers/todo.sh"
 alias t="todo"
 
 alias cl="clear"
@@ -122,7 +122,7 @@ alias glo="git log --decorate --graph --oneline"
 alias cuuid='node -e "console.log(\`$(uuidgen)\`.toLowerCase())" | pbcopy'
 alias uuid='uuidgen | tr "[:upper:]" "[:lower:]" | tr -d "\n" | pbcopy'
 
-alias fbat="sh ~/.dotfiles/alias-helpers/find-and-print.sh"
+alias fbat="sh ~/.config/helpers/find-and-print.sh"
 alias tre="tree -I node_modules -I dist"
 alias fzn="fzf --preview 'bat --style=numbers --color=always {}' | xargs -n 1 nvim"
 alias fzc="fzf --preview 'bat --style=numbers --color=always {}' | xargs -n 1 code"
@@ -166,8 +166,15 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /Users/floyd/.asdf/installs/terramate/0.4.5/bin/terramate terramate
 
-# Load Angular CLI autocompletion.
+# Angular CLI completions
 source <(ng completion script)
 
 # Init docker
 source /Users/floyd/.docker/init-zsh.sh || true 
+
+# Dart completions
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/floyd/.dart-cli-completion/zsh-config.zsh ]] && . /Users/floyd/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

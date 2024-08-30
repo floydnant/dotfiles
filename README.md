@@ -72,6 +72,7 @@ code "$(chezmoi source-path)"
 
 -   [ ] Setup encryption
 -   [ ] System preferences `https://github.com/politician/dotfiles/blob/main/run_once_before_2-configure-system-darwin.sh.tmpl`
+-   [ ] Setup global node/npm stuff
 -   [ ] Take .zshrc inspo from `https://github.com/politician/dotfiles/blob/main/dot_zshrc`
 -   [ ] Switch apps from normal install to `brew`
     -   [ ] VS Code
