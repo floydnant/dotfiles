@@ -1,5 +1,8 @@
 theme = Horizon
 cursor-style = block
 cursor-style-blink = true
+# Enable block cursor (this option is required to enable block cursor for some reason)
 shell-integration-features = no-cursor
+# Disable ligatures
+font-feature = -calt, -liga, -dlig
 
