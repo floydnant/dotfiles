@@ -1,8 +1,8 @@
 if [[ -z "$1" ]]
 	then
-		echo 'opening ./ with iTerm...'
-		open . -a iterm.app
+		echo 'opening ./ with Ghostty...'
+		open . -a ghostty.app
 	else
-		echo "opening $1 with iTerm..."
-		open $1 -a iterm.app
+		echo "opening $1 with Ghostty..."
+		open $1 -a ghostty.app
 fi

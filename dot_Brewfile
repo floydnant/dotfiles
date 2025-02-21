@@ -79,6 +79,8 @@ cask "balenaetcher"
 cask "figma"
 # Web browser
 cask "firefox"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Companion app for Home Assistant home automation software
 cask "home-assistant"
 # Keyboard customiser
