@@ -70,6 +70,8 @@ code "$(chezmoi source-path)"
 
 ## @TODO
 
+-   [ ] Add instructions on how to use the repo on a daily basis
+-   [ ] Remove vscode extensions from Brewfile
 -   [ ] Setup encryption
 -   [ ] System preferences `https://github.com/politician/dotfiles/blob/main/run_once_before_2-configure-system-darwin.sh.tmpl`
 -   [ ] Setup global node/npm stuff
@@ -78,10 +80,8 @@ code "$(chezmoi source-path)"
     -   [ ] VS Code
     -   [ ] Spotify
     -   [ ] Outlook
-    -   [ ] ClickUp
     -   [ ] Chrome
     -   [ ] GPG related stuff (gpg-suite(-no-mail), gpg-tui)
-    -   [ ] iTerm / Kitty
     -   [ ] Notion
     -   [ ] Figma
     -   [ ] Raycast
@@ -90,7 +90,6 @@ code "$(chezmoi source-path)"
     -   [ ] `~/music-library/samples` => `~/musique/lib/audio`
     -   [ ] `~/music-library/max-plugins` => `~/musique/lib/devices`
     -   [ ] `~/libraries` - ???
--   [ ] Look into [dotfiles managers](https://dotfiles.github.io/utilities/) like [chezmoi](https://www.chezmoi.io), [dotbot](https://github.com/anishathalye/dotbot). (https://dotfiles.github.io)
 -   [ ] Add complete install automation
     -   [x] XCode tools installation
     -   [x] Brew installation
@@ -118,6 +117,7 @@ nvim  --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' # inst
 
 ### Nvim config
 
+-   [ ] Fix nvim config
 -   [ ] Add line swapping
 -   [ ] Add line duplication
 -   [ ] Checkout noice
