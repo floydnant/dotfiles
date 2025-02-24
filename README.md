@@ -105,6 +105,15 @@ code "$(chezmoi source-path)"
 -   [ ] Add neovim config
 -   [ ] Add raycast config
 
+### Automate keyboard layout installation
+
+These files need to be created on inital setup:
+
+```
+/Library/Keyboard Layouts/EurKEY.keylayout
+/Library/Keyboard Layouts/EurKEY.icns
+```
+
 ### Automate nvim installation
 
 [Astro nvim installation instructions](https://astronvim.github.io/Configuration/manage_user_config#installing-from-an-existing-user-configuration)
