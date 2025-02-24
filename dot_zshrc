@@ -133,6 +133,7 @@ alias fzc="fzf --preview 'bat --style=numbers --color=always {}' | xargs -n 1 co
 # ---------------------------------------------------------------------------------------------------------------------
 alias cem="chezmoi"
 alias cembrewdump="brew bundle dump --describe --global --force && chezmoi re-add ~/.Brewfile"
+alias cemstatus="chezmoi status -p absolute | sed \"s=/Users/\$(whoami)=~=g\""
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Homebrew
