@@ -76,7 +76,6 @@ plugins=(
 	git
 	macos
 	npm
-	asdf
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
@@ -195,12 +194,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # export PATH="$CARGO_HOME/bin:$PATH"
 
 # ---------------------------------------------------------------------------------------------------------------------
-# Random
-# ---------------------------------------------------------------------------------------------------------------------
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C $HOME/.asdf/installs/terramate/0.4.5/bin/terramate terramate
-
-# ---------------------------------------------------------------------------------------------------------------------
 # Trash
 # ---------------------------------------------------------------------------------------------------------------------
 if [ -d "/opt/homebrew/opt/trash/bin" ];
@@ -217,6 +210,11 @@ if type ng > /dev/null; then source <(ng completion script); fi;
 # Init docker
 # ---------------------------------------------------------------------------------------------------------------------
 [ -f "$HOME/.docker/init-zsh.sh" ] && source $HOME/.docker/init-zsh.sh || true;
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Completion
+# ---------------------------------------------------------------------------------------------------------------------
+autoload -U +X bashcompinit && bashcompinit
 
 ## [Completion]
 ## Dart Completion scripts setup
